@@ -1,11 +1,6 @@
 require 'test_helper'
 
 class NotesControllerTest < ActionController::TestCase
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
   test "you can't create a note if you're not logged in" do
     post :create
     assert_response :unauthorized

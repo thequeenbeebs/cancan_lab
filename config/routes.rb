@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :notes
+  resources :notes, except: [:new]
   get 'notes/:id/edit' => 'notes#edit'
   
   root 'notes#index'
