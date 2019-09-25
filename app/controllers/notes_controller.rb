@@ -2,10 +2,14 @@ class NotesController < ApplicationController
   load_and_authorize_resource only: [:edit, :show, :update]
   
   def create
-    note = Note.new(note_params)
-    note.user = current_user
-    note.save!
-    redirect_to '/'
+    unless current_user
+      head :unauthorized
+    else
+      note = Note.new(note_params)
+      note.user = current_user
+      note.save!
+      redirect_to '/'
+    end
   end
 
   def update
