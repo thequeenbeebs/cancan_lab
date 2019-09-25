@@ -1,6 +1,7 @@
 # CancanCan Secret Notes
 
 ## Objectives
+
 1. Understand how to create an Ability class.
 2. Learn how to model permissions in the database.
 3. Prevent users from accessing certain actions from the controller.
@@ -8,13 +9,18 @@
 
 ## Overview
 
-We're going to learn how to integrate [CanCanCan] into a Rails application. Our authorization model for this example will be a message board for secret notes.
+We're going to learn how to integrate [CanCanCan] into a Rails application. Our
+authorization model for this example will be a message board for secret notes.
 
 ## Instructions
 
 1. Create a `User` model and migration. `User`s have `name`s and that's it.
 
-We could give our users passwords quite easily with `has_secure_password`. However that would make it a lot more annoying to develop this app! For now, we'll just have usernames, and we'll let anyone sign in as someone else only using their name. This will make it easy to switch between accounts and test our authorization scheme.
+We could give our users passwords quite easily with `has_secure_password`.
+However that would make it a lot more annoying to develop this app! For now,
+we'll just have usernames, and we'll let anyone sign in as someone else only
+using their name. This will make it easy to switch between accounts and test
+our authorization scheme.
 
 2. Create a `Note` model. `Note`s have `content`, and a `user`, their creator.
 
