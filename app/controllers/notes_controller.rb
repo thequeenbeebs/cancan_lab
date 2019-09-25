@@ -1,10 +1,6 @@
 class NotesController < ApplicationController
   load_and_authorize_resource only: [:edit, :show, :update]
   
-  def new
-    render partial: 'form', locals: {note: Note.new}
-  end
-  
   def create
     note = Note.new(note_params)
     note.user = current_user
