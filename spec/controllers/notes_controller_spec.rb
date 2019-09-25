@@ -32,7 +32,7 @@ RSpec.describe NotesController, type: :controller do
         request.session[:user_id] = @alice[:id]
         post :create, params: { note: {content: @content, visible_to: ''} }
         note = Note.last
-        expect(note.readers).to eq([@alice])
+        expect(note.readers.to_a).to eq([@alice])
       end
 
       it "is assigned to the creator" do
