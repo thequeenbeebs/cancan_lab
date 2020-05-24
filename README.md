@@ -46,8 +46,8 @@ authorization model for this example will be a message board for secret notes.
    certain operations easier, we want to create two utility methods:
 
    *  `visible_to`
-     * Takes no arguments
-     * Returns the readers' `name` `String`s, joined by a comma (with no space!)
+      * Takes no arguments
+      * Returns the readers' `name` `String`s, joined by a comma (with no space!)
    * `visible_to=(comma_string)`
      * Takes one argument, a `String`, joined by a comma (with **possible** spaces!)
      * Assigns readers based on finding the `User`s whose names match the names
@@ -75,7 +75,7 @@ authorization model for this example will be a message board for secret notes.
      * CanCanCan gives you a `user` variable that's "visible" inside the `can`
        block
      * Inside the block you have access to a `note` variable
-     * What's the relationship between a `Note` and a `User`. What associations
+     * What's the relationship between a `Note` and a `User`? What associations
        or methods are present that will help you determine whether the `User`
        should read the `Note`? You can use enumerables or loops to return a `truthy`
        value which tells Rails "permission granted."
