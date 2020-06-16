@@ -86,5 +86,3 @@ authorization model for this example will be a message board for secret notes.
 
 [CanCanCan]: https://github.com/CanCanCommunity/cancancan
 [defining_abilities]: https://github.com/CanCanCommunity/cancancan/wiki/defining-abilities
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/cancan_lab'>Cancan Lab</a> on Learn.co and start learning to code for free.</p>
