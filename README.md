@@ -86,3 +86,4 @@ authorization model for this example will be a message board for secret notes.
 
 [CanCanCan]: https://github.com/CanCanCommunity/cancancan
 [defining_abilities]: https://github.com/CanCanCommunity/cancancan/wiki/defining-abilities
+
